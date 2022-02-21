@@ -5,8 +5,10 @@ using UnityEngine;
 public class Player_Controller : MonoBehaviour
 {
     public Vector2 directions;
-    public GameObject spawnabble;
-    private int bullet_type = 0;
+    public GameObject bullet1;
+    public GameObject bullet2;
+    public GameObject bullet3;
+    //public GameObject Spell1;
 
     // Start is called before the first frame update
     void Start()
@@ -18,14 +20,36 @@ public class Player_Controller : MonoBehaviour
     void Update()
     {
         //sistemul de shoot gloante
-        if (Input.GetKeyDown(KeyCode.Space))
-            Instantiate(spawnabble, new Vector3(this.transform.position.x,this.transform.position.y,0), Quaternion.identity);
+
+        //water bullet 1
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+                Instantiate(bullet1, new Vector3(this.transform.position.x,this.transform.position.y,0), Quaternion.identity);
+        }
+
+        //fire bullet 2
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+                Instantiate(bullet2, new Vector3(this.transform.position.x,this.transform.position.y,0), Quaternion.identity);
+        }
+
+        //nature bullet3
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+                Instantiate(bullet3, new Vector3(this.transform.position.x,this.transform.position.y,0), Quaternion.identity);
+        }
+
+        /* sistemul de abilitati
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+                Instantiate(Spell1, new Vector3(this.transform.position.x,this.transform.//position.y,0), Quaternion.identity);
+        } */
 
         //sistemul de movement cu limitari pe axa y
-        if (Input.GetKeyUp(KeyCode.W) && this.transform.position.y !=9 )
+        if (Input.GetKeyDown(KeyCode.UpArrow) && this.transform.position.y !=12 )
             transform.position += new Vector3(0f, 3f, 0f);
 
-        else if (Input.GetKeyUp(KeyCode.S) && this.transform.position.y !=0)
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && this.transform.position.y !=0)
             transform.position -= new Vector3(0f, 3f, 0f);
     }
 }
