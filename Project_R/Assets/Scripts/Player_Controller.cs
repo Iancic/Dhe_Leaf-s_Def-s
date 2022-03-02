@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class Player_Controller : MonoBehaviour
 {
-    public Vector2 directions;
+    private Vector2 directions;
     public GameObject bullet1;
     public GameObject bullet2;
     public GameObject bullet3;
     //public GameObject Spell1;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -46,7 +42,7 @@ public class Player_Controller : MonoBehaviour
         } */
 
         //sistemul de movement cu limitari pe axa y
-        if (Input.GetKeyDown(KeyCode.UpArrow) && this.transform.position.y !=12 )
+        if (Input.GetKeyDown(KeyCode.UpArrow) && this.transform.position.y == 1.05f )
             transform.position += new Vector3(0f, 3f, 0f);
 
         else if (Input.GetKeyDown(KeyCode.DownArrow) && this.transform.position.y !=0)

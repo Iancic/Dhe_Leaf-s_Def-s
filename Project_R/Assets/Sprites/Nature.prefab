@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1180079815639864662}
   - component: {fileID: 5761656771002299825}
   - component: {fileID: 2375561474338689653}
-  - component: {fileID: 6995231592260520459}
+  - component: {fileID: 2984724432746367355}
   m_Layer: 0
   m_Name: Nature
   m_TagString: Nature
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4458820898041769684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,10 +83,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1536061407
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5177388603050735206, guid: 2c4c7e78420e6a843b5097b350181dbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0c68cf37fd3f61c469f9f04061ac8999, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,7 +118,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &6995231592260520459
+--- !u!61 &2984724432746367355
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,14 +133,14 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.984375, y: 0.984375}
+    oldSize: {x: 0.34, y: 0.43}
     newSize: {x: 0.984375, y: 0.984375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.2}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0

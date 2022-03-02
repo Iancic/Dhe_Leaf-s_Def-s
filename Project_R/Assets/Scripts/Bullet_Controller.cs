@@ -27,7 +27,7 @@ public class Bullet_Controller : MonoBehaviour
 
         void OnCollisionEnter2D(Collision2D atingere)
     {
-        if (atingere.gameObject.name != "Player" && atingere.gameObject.name != "Bullet1(Clone)" && atingere.gameObject.name != "Bullet2(Clone)" && atingere.gameObject.name != "Bullet3(Clone)")
+        if (atingere.gameObject.name != "Player" && atingere.gameObject.name != "Bullet1(Clone)" && atingere.gameObject.name != "Bullet2(Clone)" && atingere.gameObject.name != "Bullet3(Clone)" && atingere.gameObject.name != "Tree")
            Destroy(gameObject); 
     }
 }

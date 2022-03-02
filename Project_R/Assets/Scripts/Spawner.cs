@@ -37,28 +37,38 @@ public class Spawner : MonoBehaviour
 
         if (floor1==1)
             Instantiate(water, new Vector3(spawnloc, 0f,0f), Quaternion.identity);
-        else
+        else if (floor1==2)
             Instantiate(fire, new Vector3(spawnloc, 0f,0f), Quaternion.identity);
+        else
+            Instantiate(nature, new Vector3(spawnloc,0f,0f ),Quaternion.identity);
 
         if (floor2==1)
             Instantiate(water, new Vector3(spawnloc, 3f,0f), Quaternion.identity);
-        else
+        else if (floor2==2)
             Instantiate(fire, new Vector3(spawnloc, 3f,0f), Quaternion.identity);
+        else
+            Instantiate(nature, new Vector3(spawnloc,3f,0f ),Quaternion.identity);
 
         if (floor3==1)
             Instantiate(water, new Vector3(spawnloc, 6f,0f), Quaternion.identity);
-        else
+        else if (floor3==2)
             Instantiate(fire, new Vector3(spawnloc, 6f,0f), Quaternion.identity);
+        else
+            Instantiate(nature, new Vector3(spawnloc,6f,0f ),Quaternion.identity);
 
         if (floor4==1)
             Instantiate(water, new Vector3(spawnloc, 9f,0f), Quaternion.identity);
-        else
+        else if (floor4==2)
             Instantiate(fire, new Vector3(spawnloc, 9f,0f), Quaternion.identity);
+        else
+            Instantiate(nature, new Vector3(spawnloc,9f,0f ),Quaternion.identity);
 
          if (floor5==1)
             Instantiate(water, new Vector3(spawnloc, 12f,0f), Quaternion.identity);
-        else
+        else if (floor5==2)
             Instantiate(fire, new Vector3(spawnloc, 12f,0f), Quaternion.identity);
+        else
+            Instantiate(nature, new Vector3(spawnloc,12f,0f ),Quaternion.identity);
     }        
 
 }

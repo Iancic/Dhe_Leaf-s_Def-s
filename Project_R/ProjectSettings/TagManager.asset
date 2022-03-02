@@ -44,3 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fundal
+    uniqueID: 981341079
+    locked: 0
+  - name: Tree
+    uniqueID: 1770573021
+    locked: 0
+  - name: Entities
+    uniqueID: 2758905889
+    locked: 0
