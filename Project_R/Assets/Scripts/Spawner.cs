@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     private int floor3;
     private int floor4;
     private int floor5;
-    private float spawnloc = 33;
+    private float spawnloc = 19;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,39 +36,39 @@ public class Spawner : MonoBehaviour
         floor5 = UnityEngine.Random.Range(0,3);
 
         if (floor1==1)
-            Instantiate(water, new Vector3(spawnloc, 0f,0f), Quaternion.identity);
+            Instantiate(water, new Vector3(spawnloc, -6.94f,0f), Quaternion.identity);
         else if (floor1==2)
-            Instantiate(fire, new Vector3(spawnloc, 0f,0f), Quaternion.identity);
+            Instantiate(fire, new Vector3(spawnloc, -6.94f,0f), Quaternion.identity);
         else
-            Instantiate(nature, new Vector3(spawnloc,0f,0f ),Quaternion.identity);
+            Instantiate(nature, new Vector3(spawnloc,-6.94f,0f ),Quaternion.identity);
 
         if (floor2==1)
-            Instantiate(water, new Vector3(spawnloc, 3f,0f), Quaternion.identity);
+            Instantiate(water, new Vector3(spawnloc, -4.2f,0f), Quaternion.identity);
         else if (floor2==2)
-            Instantiate(fire, new Vector3(spawnloc, 3f,0f), Quaternion.identity);
+            Instantiate(fire, new Vector3(spawnloc, -4.2f,0f), Quaternion.identity);
         else
-            Instantiate(nature, new Vector3(spawnloc,3f,0f ),Quaternion.identity);
+            Instantiate(nature, new Vector3(spawnloc,-4.2f,0f ),Quaternion.identity);
 
         if (floor3==1)
-            Instantiate(water, new Vector3(spawnloc, 6f,0f), Quaternion.identity);
+            Instantiate(water, new Vector3(spawnloc, -1.46f,0f), Quaternion.identity);
         else if (floor3==2)
-            Instantiate(fire, new Vector3(spawnloc, 6f,0f), Quaternion.identity);
+            Instantiate(fire, new Vector3(spawnloc, -1.46f,0f), Quaternion.identity);
         else
-            Instantiate(nature, new Vector3(spawnloc,6f,0f ),Quaternion.identity);
+            Instantiate(nature, new Vector3(spawnloc,-1.46f,0f ),Quaternion.identity);
 
         if (floor4==1)
-            Instantiate(water, new Vector3(spawnloc, 9f,0f), Quaternion.identity);
+            Instantiate(water, new Vector3(spawnloc, 1.28f,0f), Quaternion.identity);
         else if (floor4==2)
-            Instantiate(fire, new Vector3(spawnloc, 9f,0f), Quaternion.identity);
+            Instantiate(fire, new Vector3(spawnloc, 1.28f,0f), Quaternion.identity);
         else
-            Instantiate(nature, new Vector3(spawnloc,9f,0f ),Quaternion.identity);
+            Instantiate(nature, new Vector3(spawnloc,1.28f,0f ),Quaternion.identity);
 
          if (floor5==1)
-            Instantiate(water, new Vector3(spawnloc, 12f,0f), Quaternion.identity);
+            Instantiate(water, new Vector3(spawnloc, 4.02f,0f), Quaternion.identity);
         else if (floor5==2)
-            Instantiate(fire, new Vector3(spawnloc, 12f,0f), Quaternion.identity);
+            Instantiate(fire, new Vector3(spawnloc, 4.02f,0f), Quaternion.identity);
         else
-            Instantiate(nature, new Vector3(spawnloc,12f,0f ),Quaternion.identity);
+            Instantiate(nature, new Vector3(spawnloc,4.02f,0f ),Quaternion.identity);
     }        
 
 }

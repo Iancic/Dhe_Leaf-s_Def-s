@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_Controller : MonoBehaviour
 {
-    private float Speed = 0.0008f;
+    private float Speed = 0.0004f;
     private Rigidbody2D corp_rb;
 
     // Start is called before the first frame update
@@ -17,28 +17,20 @@ public class Enemy_Controller : MonoBehaviour
     void Update()
     {
         corp_rb.AddForce(new Vector2(-Speed,0), ForceMode2D.Impulse);
-
-        //evitarea lag-ului prin eliminarea inamicilor inutili
-        if (this.transform.position.x < 0)
-            Destroy(gameObject);
     }
 
     void OnCollisionEnter2D(Collision2D atingere)
     {
-        //coliziunea este bazata pe folosirea tagurilor specifice inamicului
-        //sistemul de ierarhie intre gloante si inamici:
-        /*
-        Water Enemy 2hp:
+        /*coliziunea este bazata pe folosirea tagurilor specifice inamicului sistemul de ierarhie intre gloante si inamici:
+            Water Enemy 2hp:
         Neutral, fire = -1 hp
         Weakness, nature = one shot
         Amplif, water = +1 hp
-
-        Fire Enemy 2 hp:
+            Fire Enemy 2 hp:
         Neutral, nature = -1 hp
         Weakness, water = one shot
         Amplif, fire = +hp
-
-        Nature Enemy 2hp:
+            Nature Enemy 2hp:
         Neutral, water = -1 hp
         Weakness, fire = one shot
         Amplif, nature= +hp
@@ -97,6 +89,12 @@ public class Enemy_Controller : MonoBehaviour
                 Destroy(gameObject); 
                 Debug.Log("Weakness");
             }  
+        }
+
+        if ( atingere.gameObject.tag == "Tree" )
+        {
+            Destroy(gameObject);  
+            Debug.Log("Tree Hit"); 
         }
     }
 }

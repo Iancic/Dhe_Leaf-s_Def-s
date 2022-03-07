@@ -20,32 +20,32 @@ public class Player_Controller : MonoBehaviour
         //water bullet 1
         if (Input.GetKeyDown(KeyCode.Q))
         {
-                Instantiate(bullet1, new Vector3(this.transform.position.x,this.transform.position.y,0), Quaternion.identity);
+                Instantiate(bullet1, new Vector3(this.transform.position.x,this.transform.position.y + 1,0), Quaternion.identity);
         }
 
         //fire bullet 2
         if (Input.GetKeyDown(KeyCode.W))
         {
-                Instantiate(bullet2, new Vector3(this.transform.position.x,this.transform.position.y,0), Quaternion.identity);
+                Instantiate(bullet2, new Vector3(this.transform.position.x,this.transform.position.y + 1,0), Quaternion.identity);
         }
 
         //nature bullet3
         if (Input.GetKeyDown(KeyCode.E))
         {
-                Instantiate(bullet3, new Vector3(this.transform.position.x,this.transform.position.y,0), Quaternion.identity);
+                Instantiate(bullet3, new Vector3(this.transform.position.x,this.transform.position.y + 1,0), Quaternion.identity);
         }
 
         /* sistemul de abilitati
         if (Input.GetKeyDown(KeyCode.R))
         {
-                Instantiate(Spell1, new Vector3(this.transform.position.x,this.transform.//position.y,0), Quaternion.identity);
+                Instantiate(Spell1, new Vector3(this.transform.position.x,this.transform.//position.y + 1,0), Quaternion.identity);
         } */
 
         //sistemul de movement cu limitari pe axa y
-        if (Input.GetKeyDown(KeyCode.UpArrow) && this.transform.position.y == 1.05f )
-            transform.position += new Vector3(0f, 3f, 0f);
+        if (Input.GetKeyDown(KeyCode.UpArrow) && this.transform.position.y < 2.99f)
+            transform.position += new Vector3(0f, 2.74f, 0f);
 
-        else if (Input.GetKeyDown(KeyCode.DownArrow) && this.transform.position.y !=0)
-            transform.position -= new Vector3(0f, 3f, 0f);
+        if (Input.GetKeyDown(KeyCode.DownArrow) && this.transform.position.y > -7.93f)
+            transform.position -= new Vector3(0f, 2.74f, 0f);
     }
 }
