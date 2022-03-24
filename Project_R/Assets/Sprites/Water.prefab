@@ -47,6 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8006ccc2d3ddaf4ba5816c81b50ab23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthbar: {fileID: 6196990003205998599}
+  health1: {fileID: 21300000, guid: 26e16d60037f2c44d988496f8d08c623, type: 3}
+  health2: {fileID: 21300000, guid: 15fe075a4d3b57c4fac0b029208b3708, type: 3}
+  health3: {fileID: 21300000, guid: a02da63e372b5454bb6d1ccaa0d2bc3e, type: 3}
 --- !u!212 &3488110994602456628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -156,7 +160,7 @@ GameObject:
   - component: {fileID: 8925802632880701704}
   - component: {fileID: 8305324502678123390}
   m_Layer: 0
-  m_Name: HeathBar
+  m_Name: HeathBar_Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +175,7 @@ Transform:
   m_GameObject: {fileID: 6196990003205998599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.28, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1268643061991159816}
   m_RootOrder: 0

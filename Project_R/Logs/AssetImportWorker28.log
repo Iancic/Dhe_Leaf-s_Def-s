@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.15f2 (6cf78cb77498) revision 7141260'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19044.1526; Version 2009; 64bit' Language: 'en' Physical Memory: 15789 MB
+OS: 'Windows 10 Home; OS build 19044.1586; Version 2009; 64bit' Language: 'en' Physical Memory: 15789 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,28 +15,28 @@ C:/Programming/Game Development/Projects/Project_R/Project_R
 -logFile
 Logs/AssetImportWorker28.log
 -srvPort
-53914
+60372
 Successfully changed project path to: C:/Programming/Game Development/Projects/Project_R/Project_R
 C:/Programming/Game Development/Projects/Project_R/Project_R
 Using Asset Import Pipeline V2.
 received signal from system: SIGSEGV
 Stack trace:
-0x00007ff79569599c (Unity) StackWalker::GetCurrentCallstack
-0x00007ff79569dd79 (Unity) StackWalker::ShowCallstack
-0x00007ff796ba52ac (Unity) GetStacktrace
-0x00007ff795695004 (Unity) winutils::CrashHandler::DefaultSignalHandler
-0x00007ff798a504d2 (Unity) seh_filter_exe
-0x00007ff798e1df59 (Unity) `__scrt_common_main_seh'::`1'::filt$0
-0x00007ff798a1e0b8 (Unity) _C_specific_handler
-0x00007ff8358520cf (ntdll) _chkstk
-0x00007ff835801454 (ntdll) RtlRaiseException
-0x00007ff835850bfe (ntdll) KiUserExceptionDispatcher
-0x00007ff796d4c1bd (Unity) SyncAssetFoldersWithDB
-0x00007ff796d32ce9 (Unity) InitializeAssetDatabaseV2
-0x00007ff796c84cc5 (Unity) AssetDatabase::InitializeAssetDatabase
-0x00007ff79621bd20 (Unity) Application::InitializeProject
-0x00007ff796bb2812 (Unity) WinMain
-0x00007ff7989fb016 (Unity) __scrt_common_main_seh
-0x00007ff833877034 (KERNEL32) BaseThreadInitThunk
-0x00007ff835802651 (ntdll) RtlUserThreadStart
+0x00007ff61085599c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff61085dd79 (Unity) StackWalker::ShowCallstack
+0x00007ff611d652ac (Unity) GetStacktrace
+0x00007ff610855004 (Unity) winutils::CrashHandler::DefaultSignalHandler
+0x00007ff613c104d2 (Unity) seh_filter_exe
+0x00007ff613fddf59 (Unity) `__scrt_common_main_seh'::`1'::filt$0
+0x00007ff613bde0b8 (Unity) _C_specific_handler
+0x00007ffbd56f20cf (ntdll) _chkstk
+0x00007ffbd56a1454 (ntdll) RtlRaiseException
+0x00007ffbd56f0bfe (ntdll) KiUserExceptionDispatcher
+0x00007ff611f0c1bd (Unity) SyncAssetFoldersWithDB
+0x00007ff611ef2ce9 (Unity) InitializeAssetDatabaseV2
+0x00007ff611e44cc5 (Unity) AssetDatabase::InitializeAssetDatabase
+0x00007ff6113dbd20 (Unity) Application::InitializeProject
+0x00007ff611d72812 (Unity) WinMain
+0x00007ff613bbb016 (Unity) __scrt_common_main_seh
+0x00007ffbd4977034 (KERNEL32) BaseThreadInitThunk
+0x00007ffbd56a2651 (ntdll) RtlUserThreadStart
 

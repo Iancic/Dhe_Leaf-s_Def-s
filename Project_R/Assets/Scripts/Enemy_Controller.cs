@@ -6,11 +6,21 @@ public class Enemy_Controller : MonoBehaviour
 {
     private float Speed = 0.0004f;
     private Rigidbody2D corp_rb;
+    public GameObject healthbar;
+    private int hitpoints;
+    private SpriteRenderer rend;
+    private Sprite nexthitbar;
+    public Sprite health1, health2, health3;
 
     // Start is called before the first frame update
     void Start()
     {
         corp_rb = GetComponent<Rigidbody2D>();
+        hitpoints = 3;
+
+        //hitbar
+        rend = healthbar.GetComponent<SpriteRenderer>();
+        rend.sprite = health3;
     }
 
     // Update is called once per frame
@@ -21,6 +31,7 @@ public class Enemy_Controller : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D atingere)
     {
+
         /*coliziunea este bazata pe folosirea tagurilor specifice inamicului sistemul de ierarhie intre gloante si inamici:
             Water Enemy 2hp:
         Neutral, fire = -1 hp
@@ -36,21 +47,30 @@ public class Enemy_Controller : MonoBehaviour
         Amplif, nature= +hp
         */
 
+        hitpoints = hitpoints - 1;
+
+        if ( hitpoints == 1 )
+            nexthitbar = health1;
+        else if ( hitpoints == 2 )
+            nexthitbar = health2; 
+        else if ( hitpoints == 0 )
+            Destroy(gameObject);  
+
         if ( gameObject.tag == "Water" )
         {
             if (atingere.gameObject.name == "Bullet1(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Ampped");
             }
             if (atingere.gameObject.name == "Bullet2(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Neutral");
             }
             if (atingere.gameObject.name == "Bullet3(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Weakness");
             }
         }
@@ -58,17 +78,17 @@ public class Enemy_Controller : MonoBehaviour
         {
             if (atingere.gameObject.name == "Bullet2(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Ampped");
             }
             if (atingere.gameObject.name == "Bullet3(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Neutral");
             }
             if (atingere.gameObject.name == "Bullet1(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Weakness");
             }
         }
@@ -76,17 +96,17 @@ public class Enemy_Controller : MonoBehaviour
         {
             if (atingere.gameObject.name == "Bullet3(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Ampped");
             }
             if (atingere.gameObject.name == "Bullet1(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Neutral");
             }
             if (atingere.gameObject.name == "Bullet2(Clone)")
             {
-                Destroy(gameObject); 
+                rend.sprite = nexthitbar;
                 Debug.Log("Weakness");
             }  
         }

@@ -8,22 +8,12 @@ public class Spawner : MonoBehaviour
     public GameObject water;
     public GameObject nature;
     public float spawn_rate;
-    private int floor1;
-    private int floor2;
-    private int floor3;
-    private int floor4;
-    private int floor5;
+    private int floor1, floor2, floor3, floor4, floor5;
     private float spawnloc = 19;
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Spawnning",spawn_rate,spawn_rate);       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void Spawnning()
