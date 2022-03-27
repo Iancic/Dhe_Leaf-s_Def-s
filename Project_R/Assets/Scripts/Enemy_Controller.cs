@@ -7,13 +7,17 @@ public class Enemy_Controller : MonoBehaviour
     private float Speed = 0.0004f;
     private Rigidbody2D corp_rb;
     public GameObject healthbar;
-    private int hitpoints;
+    public int hitpoints;
+    public static int score;
     private SpriteRenderer rend;
     private Sprite nexthitbar;
     public Sprite health1, health2, health3;
 
     void Start()
     {
+        //score
+        score = 0;
+
         corp_rb = GetComponent<Rigidbody2D>();
         hitpoints = 3;
 
@@ -58,16 +62,19 @@ public class Enemy_Controller : MonoBehaviour
             if (atingere.gameObject.name == "Bullet1(Clone)")
             {
                 rend.sprite = nexthitbar;
+                score = score + 10;
                 Debug.Log("Ampped");
             }
             if (atingere.gameObject.name == "Bullet2(Clone)")
             {
                 rend.sprite = nexthitbar;
+                score = score + 10;
                 Debug.Log("Neutral");
             }
             if (atingere.gameObject.name == "Bullet3(Clone)")
             {
                 rend.sprite = nexthitbar;
+                score = score + 10;
                 Debug.Log("Weakness");
             }
         }
@@ -76,11 +83,13 @@ public class Enemy_Controller : MonoBehaviour
             if (atingere.gameObject.name == "Bullet2(Clone)")
             {
                 rend.sprite = nexthitbar;
+                score = score + 10;
                 Debug.Log("Ampped");
             }
             if (atingere.gameObject.name == "Bullet3(Clone)")
             {
                 rend.sprite = nexthitbar;
+                score = score + 10;
                 Debug.Log("Neutral");
             }
             if (atingere.gameObject.name == "Bullet1(Clone)")
@@ -94,16 +103,19 @@ public class Enemy_Controller : MonoBehaviour
             if (atingere.gameObject.name == "Bullet3(Clone)")
             {
                 rend.sprite = nexthitbar;
+                score = score + 10;
                 Debug.Log("Ampped");
             }
             if (atingere.gameObject.name == "Bullet1(Clone)")
             {
                 rend.sprite = nexthitbar;
+                score = score + 10;
                 Debug.Log("Neutral");
             }
             if (atingere.gameObject.name == "Bullet2(Clone)")
             {
                 rend.sprite = nexthitbar;
+                score = score + 10;
                 Debug.Log("Weakness");
             }  
         }

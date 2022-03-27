@@ -15,28 +15,28 @@ C:/Programming/Game Development/Projects/Project_R/Project_R
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49809
+50844
 Successfully changed project path to: C:/Programming/Game Development/Projects/Project_R/Project_R
 C:/Programming/Game Development/Projects/Project_R/Project_R
 Using Asset Import Pipeline V2.
 received signal from system: SIGSEGV
 Stack trace:
-0x00007ff6f044599c (Unity) StackWalker::GetCurrentCallstack
-0x00007ff6f044dd79 (Unity) StackWalker::ShowCallstack
-0x00007ff6f19552ac (Unity) GetStacktrace
-0x00007ff6f0445004 (Unity) winutils::CrashHandler::DefaultSignalHandler
-0x00007ff6f38004d2 (Unity) seh_filter_exe
-0x00007ff6f3bcdf59 (Unity) `__scrt_common_main_seh'::`1'::filt$0
-0x00007ff6f37ce0b8 (Unity) _C_specific_handler
-0x00007ffa569520cf (ntdll) _chkstk
-0x00007ffa56901454 (ntdll) RtlRaiseException
-0x00007ffa56950bfe (ntdll) KiUserExceptionDispatcher
-0x00007ff6f1afc1bd (Unity) SyncAssetFoldersWithDB
-0x00007ff6f1ae2ce9 (Unity) InitializeAssetDatabaseV2
-0x00007ff6f1a34cc5 (Unity) AssetDatabase::InitializeAssetDatabase
-0x00007ff6f0fcbd20 (Unity) Application::InitializeProject
-0x00007ff6f1962812 (Unity) WinMain
-0x00007ff6f37ab016 (Unity) __scrt_common_main_seh
-0x00007ffa56537034 (KERNEL32) BaseThreadInitThunk
-0x00007ffa56902651 (ntdll) RtlUserThreadStart
+0x00007ff652f5599c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff652f5dd79 (Unity) StackWalker::ShowCallstack
+0x00007ff6544652ac (Unity) GetStacktrace
+0x00007ff652f55004 (Unity) winutils::CrashHandler::DefaultSignalHandler
+0x00007ff6563104d2 (Unity) seh_filter_exe
+0x00007ff6566ddf59 (Unity) `__scrt_common_main_seh'::`1'::filt$0
+0x00007ff6562de0b8 (Unity) _C_specific_handler
+0x00007ffba3a320cf (ntdll) _chkstk
+0x00007ffba39e1454 (ntdll) RtlRaiseException
+0x00007ffba3a30bfe (ntdll) KiUserExceptionDispatcher
+0x00007ff65460c1bd (Unity) SyncAssetFoldersWithDB
+0x00007ff6545f2ce9 (Unity) InitializeAssetDatabaseV2
+0x00007ff654544cc5 (Unity) AssetDatabase::InitializeAssetDatabase
+0x00007ff653adbd20 (Unity) Application::InitializeProject
+0x00007ff654472812 (Unity) WinMain
+0x00007ff6562bb016 (Unity) __scrt_common_main_seh
+0x00007ffba2647034 (KERNEL32) BaseThreadInitThunk
+0x00007ffba39e2651 (ntdll) RtlUserThreadStart
 
