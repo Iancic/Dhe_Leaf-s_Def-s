@@ -12,7 +12,6 @@ public class Enemy_Controller : MonoBehaviour
     private Sprite nexthitbar;
     public Sprite health1, health2, health3;
 
-    // Start is called before the first frame update
     void Start()
     {
         corp_rb = GetComponent<Rigidbody2D>();
@@ -23,7 +22,6 @@ public class Enemy_Controller : MonoBehaviour
         rend.sprite = health3;
     }
 
-    // Update is called once per frame
     void Update()
     {
         corp_rb.AddForce(new Vector2(-Speed,0), ForceMode2D.Impulse);
@@ -31,7 +29,6 @@ public class Enemy_Controller : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D atingere)
     {
-
         /*coliziunea este bazata pe folosirea tagurilor specifice inamicului sistemul de ierarhie intre gloante si inamici:
             Water Enemy 2hp:
         Neutral, fire = -1 hp

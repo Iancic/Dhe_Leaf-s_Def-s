@@ -10,9 +10,6 @@ public class Player_Controller : MonoBehaviour
     public GameObject bullet3;
     //public GameObject Spell1;
 
-    // Start is called before the first frame update
-
-    // Update is called once per frame
     void Update()
     {
         //sistemul de shoot gloante

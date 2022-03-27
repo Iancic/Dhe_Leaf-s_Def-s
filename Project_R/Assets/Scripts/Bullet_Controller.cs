@@ -9,13 +9,12 @@ public class Bullet_Controller : MonoBehaviour
     private int bulletdist=33;
     private Rigidbody2D corp_rb;
     
-    // Start is called before the first frame update
+
     void Start()
     {
         corp_rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         corp_rb.AddForce(new Vector2(Speed,0), ForceMode2D.Impulse);
