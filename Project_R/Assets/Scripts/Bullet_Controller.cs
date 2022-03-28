@@ -7,7 +7,7 @@ public class Bullet_Controller : MonoBehaviour
 {
 
     public float Speed;
-    private int bulletdist=33;
+    private int bulletdist=18;
     private Rigidbody2D corp_rb;
     
 

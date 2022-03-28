@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: adb108144365e6745ab6740282e50527
+guid: 4841599b377891243b027f84d156f80e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 90
-  forceTextureCase: -1
+  fontSize: 16
+  forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Stay Pixel
+  - Daydream
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

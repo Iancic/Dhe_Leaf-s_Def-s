@@ -9,6 +9,7 @@ public class Spawner : MonoBehaviour
     public GameObject nature;
     public float spawn_rate, spawnloc = 19;
     private int floor1, floor2, floor3, floor4, floor5, timestamp;
+    public static int wave = 0;
 
     void Start()
     {
@@ -66,6 +67,8 @@ public class Spawner : MonoBehaviour
             Instantiate(fire, new Vector3(spawnloc, 4.02f,0f), Quaternion.identity);
         else if (floor5==3)
             Instantiate(nature, new Vector3(spawnloc,4.02f,0f ),Quaternion.identity);
+        
+        wave = wave + 1;
     }        
 
 }

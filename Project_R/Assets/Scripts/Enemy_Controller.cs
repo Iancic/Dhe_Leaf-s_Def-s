@@ -8,16 +8,13 @@ public class Enemy_Controller : MonoBehaviour
     private Rigidbody2D corp_rb;
     public GameObject healthbar;
     public int hitpoints;
-    public static int score;
+    public static int score = 0;
     private SpriteRenderer rend;
     private Sprite nexthitbar;
     public Sprite health1, health2, health3;
 
     void Start()
     {
-        //score
-        score = 0;
-
         corp_rb = GetComponent<Rigidbody2D>();
         hitpoints = 3;
 
@@ -34,19 +31,9 @@ public class Enemy_Controller : MonoBehaviour
     void OnCollisionEnter2D(Collision2D atingere)
     {
         /*coliziunea este bazata pe folosirea tagurilor specifice inamicului sistemul de ierarhie intre gloante si inamici:
-            Water Enemy 2hp:
-        Neutral, fire = -1 hp
-        Weakness, nature = one shot
-        Amplif, water = +1 hp
-            Fire Enemy 2 hp:
-        Neutral, nature = -1 hp
-        Weakness, water = one shot
-        Amplif, fire = +hp
-            Nature Enemy 2hp:
-        Neutral, water = -1 hp
-        Weakness, fire = one shot
-        Amplif, nature= +hp
-        */
+            Water Enemy 2hp \ Neutral, fire = -1 hp \ Weakness, nature = one shot \ Amplif, water = +1 hp
+            Fire Enemy 2 hp \ Neutral, nature = -1 hp \ Weakness, water = one shot \ Amplif, fire = +hp
+            Nature Enemy 2hp \ Neutral, water = -1 hp \ Weakness, fire = one shot \ Amplif, nature= +hp*/
 
         hitpoints = hitpoints - 1;
 

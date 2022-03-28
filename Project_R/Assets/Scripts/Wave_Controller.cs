@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Score_Controller : MonoBehaviour
+public class Wave_Controller : MonoBehaviour
 {
-    Text score;
+    Text wave;
 
     void Start()
     {
-        score = GetComponent<Text> ();
+        wave = GetComponent<Text> ();
     }
 
     void Update()
     {
-        score.text = "Score " + Enemy_Controller.score;
+        wave.text = "Wave " + Spawner.wave;
     }
 }
